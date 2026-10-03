@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Ositos - Diseños</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+  <h1>Mundo Ositos</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="diseños.html" class="activo">Diseños</a>
+  </nav>
+</header>
+
+<main>
+  <h2 class="titulo-pagina">Crea tu Diseño Personalizado</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icono">🎀</div>
+      <h3>Estilo Coquette</h3>
+      <p>Rosa pastel + moño a cuadros</p>
+      <button onclick="elegir('Coquette')">Elegir</button>
+    </div>
+    <div class="card">
+      <div class="icono">⭐</div>
+      <h3>Estilo Galaxia</h3>
+      <p>Negro con estrellas brillantes</p>
+      <button onclick="elegir('Galaxia')">Elegir</button>
+    </div>
+    <div class="card">
+      <div class="icono">❤️</div>
+      <h3>Estilo Amor</h3>
+      <p>Blanco con corazón rojo gigante</p>
+      <button onclick="elegir('Amor')">Elegir</button>
+    </div>
+  </div>
+
+  <section class="formulario">
+    <h3>Tu idea personalizada</h3>
+    <input type="text" id="idea" placeholder="Ej: Quiero un oso azul con bufanda">
+    <button onclick="enviarIdea()">Enviar por WhatsApp</button>
+  </section>
+</main>
+
+<footer>© 2026 Mundo Ositos - GERMA</footer>
+<script src="app.js"></script>
+</body>
+</html>
